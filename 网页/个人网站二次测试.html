@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untitled Document</title>
+    <style>
+       .bizhi {  /* 设置背景*/
+            opacity:0.8;
+            width: 100%;
+    }
+    div.transbox p
+    {
+      margin: 30px 40px;
+      font-weight: bold;
+      color: #0a0a0a;
+    }
+.text-overlay {
+  position: absolute;
+  top: 50%; /* 垂直居中 */
+  left: 50%; /* 水平居中 */
+  transform: translate(-50%, -50%); /* 微调位置 */
+  color: rgb(236, 148, 148); /* 文字颜色 */
+  text-align: center;
+}
+        .bizhi2 {
+            opacity:0.8;
+            width: 100%;
+            height: 100%;
+        }
+        body{
+            margin:0px;
+            height: 100vh;
+            background-color: #eee;
+        }
+        *{
+            border: 1px solid rgb(167, 165, 165);
+        }*/
+        .yinying{
+            box-shadow: rgb(0 0 0 / 20%) 0px 1px 3px,
+             rgb(0 0 0 / 14%) 0px 1px 1px, rgb(0 0 0 / 12%) 0px 2px 1px -1px
+            ;
+        }
+        .flex{
+            display: flex;
+            ;
+        }
+        .baise{
+            background-color: rgb(252, 252, 252);
+        }
+        .flex1{
+            flex: 1;
+        }
+        .column{
+            flex-direction: column;
+        }
+        .mg8{
+            margin-right: 8px;
+        }
+        .mgr8{
+            margin-right: 8px;
+        }
+        .mgt8{
+            margin-top: 8px;
+        }
+        .jianjie {
+            padding: 10px 20px;
+            border-bottom: 1px solid rgb(20, 9, 9)
+            font-size 14px;
+            color: #666;
+        }
+        .geren {
+            padding: 10px 20px;
+            border-top: 1px solid rgb(85, 78, 78);
+            font-size: 14px;
+            color: #666;
+            text-align: center;
+
+        }
+        .caidang {
+            text-align: center;
+        }
+        @media (max-width: 600px) {
+            .cebian {
+                display:none;
+            }
+            .neirong {
+                flex-direction: column;
+            }
+            .shujuqu {
+                flex-direction: column;
+            }
+            .youqu {
+                margin-left: 8px;
+            }
+            .shuju{
+                margin: 0px 0px 8px;
+                flex: auto;
+            }
+        }
+        .neirong :-webkit-srcollbar {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img  class="bizhi" src="https://i.ibb.co/chtqJPQ8/image.jpg"  
+        alt="image height:30px">
+        <div class="text-overlay">
+            <p>
+             如果你看到这里，说明你已经被深深吸引
+            </p>
+    </div>
+<div class="flex">
+    <!--侧边栏-->
+    <div style="width: 200px ;" class="baise yinying">
+        <!--头像栏-->
+    <div style
+        ="padding: 10px;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 1px solid #999;
+        " 
+        class="flex"
+      >
+            <img src="https://i.ibb.co/Xr27rSpr/tupian-com.jpg.nrg" 
+             width="40px"
+             height="40px"
+             alt="tupian-com"
+             />
+             <div style="margin-left: 10px;">潇潇</div>
+        </div>
+        <!--导航栏-->
+        <div class="flex1">
+            <div class="jianjie">个人简介：?</div>
+            <div class="jianjie">个人爱好：看书、旅游、打游戏</div>
+        </div>
+    </div>
+    <!--主区域-->
+    <div class="flex1 flex column">
+        <!--头部栏-->
+        <div style="height: 60px;" class="baise yinying"></div>
+        <!--内容区-->
+        <div style="overflow: auto" class="neirong flex1 flex">
+            <!--左区-->
+            <div style="flex:3;" class="flex column mg8">
+                <!--数据区-->
+                <div class="flex shujuqu">
+                    <!--数据块-->
+                    <div style="height: 100px;" 
+                    class="shuju flex1 baise mgr8 yinying"></div>
+                    <div style="height: 100px;" 
+                    class="shuju flex1 baise mgr8 yinying"></div>
+                    <div style="height: 100px;"
+                     class="shuju flex1 baise mgr8 yinying"></div>
+                    <div style="height: 100px;"
+                     class="shuju flex1 baise yinying"></div>
+                </div>
+                <!--列表区-->
+                <div class="flex column">
+                    <!--列表项-->
+                    <div style="height: 760px;" class="baise mgt8 yinying"></div>
+                </div>
+                <!--版权区-->
+                <div class="geren">2025@个人网页  潇潇</div>
+            </div>
+            <!--右区-->
+            <div style="flex:1;" class="youqu flex column mgr8 mgt8">
+                <!--提示区-->
+                <div style="height: 150px;"class="baise yinying"></div>
+                <!--消息区-->
+                <div style="height: 300px;"class="baise mgt8 yinying">
+                    <!-- 图片 -->
+                    <img  class="bizhi2" src="https://i.ibb.co/3YdksYTG/2.jpg.mrg" alt="图片" >
+                </div>
+                <!-- 彩蛋 -->
+                <div class="caidang">点击下方按钮
+                <div class="caidang">↓</div>
+                <button type="button" onclick="alert('恭喜你被诈骗，这里什么都没有！')" class="caidang">似乎有宝贝点一下试试!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

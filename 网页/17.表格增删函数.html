@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>表格增删函数</title>
+    <style>
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+      th,
+      td {
+        border: 1px solid #ddd;
+        text-align: center;
+        padding: 4px;
+      }
+
+      th {
+        background-color: #ddd;
+      }
+      button {
+        margin-left: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center">表格增删函数</h1>
+    <button onclick="addRow()">新增数据</button>
+    <table id="table">
+      <tr>
+        <th>姓名</th>
+        <th>联系方式</th>
+        <th>操作</th>
+      </tr>
+      <tr>
+        <td>李</td>
+        <td>12333333333</td>
+        <td>
+          <button onclick="editRow(this)">剪辑</button
+          ><button onclick="deleteRow(this)">删除</button>
+        </td>
+      </tr>
+    </table>
+    <script src="./js/table.js"></script>
+  </body>
+</html>

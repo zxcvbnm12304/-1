@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css导入</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <style>
+      p {
+        color: blue;
+        font-size: 16px;
+      }
+      h2 {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <p>这是css样式表</p>
+    <h1 style="color: red">这是一个css标题</h1>
+    <h2>这是第二个标题</h2>
+    <h3>这是一个三级标题</h3>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>移动端以及rem</title>
+    <style>
+      /* html{
+            font-size: 20px;
+        } */
+      .box-px {
+        width: 300px;
+        height: 100px;
+        background-color: antiquewhite;
+        margin-bottom: 50px;
+      }
+
+      .box-row {
+        width: 5rem;
+        height: 3rem;
+        background-color: aquamarine;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box-px"></div>
+
+    <div class="box-row"></div>
+
+    <script>
+      //根据设备计算标签的 font-size的属性值，设备宽度/10
+      function resetHtmlFontSize() {
+        document.documentElement.style.fontsize = screen.width / 10 + "px";
+      }
+      resetHtmlFontSize();
+
+      //绑定事件
+      window.onresize = resetHtmlFontSize();
+    </script>
+  </body>
+</html>

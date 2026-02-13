@@ -1,0 +1,9 @@
+<style>
+  .bizhi {
+    opacity: 0.8;
+    width: 100%;
+  }
+</style>
+<img class="bizhi" src="https://i.ibb.co/chtqJPQ8/image.jpg.nrg" alt="图片" />
+<img src="https://i.ibb.co/WWFMn2YF/3.gif" />
+<img src="https://i.ibb.co/NbMTyjq/download.jpg" />

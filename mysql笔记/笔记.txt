@@ -1,0 +1,47 @@
+#创建数据库 ：create database 库名;
+ create database txt2;
+ create database txt3;
+#删除数据库：drop database 库名;
+ drop database txt3;
+#切换数据库: use 库名;
+ use txt1;
+#查看所有数据库：  show databases;
+ show databases;
+#查看当前正在使用的数据库:select database();
+ select database();
+
+#变得基本操作
+#创建表格： create table 表名；
+ create table  studentid(id int,name varchar(50),age int);
+#删除表格：drop table 表名;
+ drop table 表名;
+#修改表名：rename table 旧表名 to 新表名;
+ rename table 表名 to 新表名;
+#查看所有表:show table;
+ show table;
+#查看表结构；desc 表名；
+ desc 表名;
+
+#表中的字段操作
+#添加一列：alter table 表名 add 字段名 字段类型;
+#添加一列班级的字段
+ alter table 表名 add class varchar();
+#添加一列：alter table 表名 drop 字段名 ;
+ alter table 表名 drop age;
+#修改字段名和类型：alter table 表名 change 旧字段名 新字段名 新字段类型;
+alter table 表名 change id sid varchar() ;
+
+#表的记录操作
+#插入数据：
+#插入一条：insert into 表名 （字段1，字段2）values(值1，值2);
+insert into 表名 （sid,name,class）values ("**","","");
+#如果插入的数据是所有字段 可以不用指定字段插入
+insert into 表名（sid,name）values ("**","","");
+
+#修改数据：updata 表名 set 字段名 = 值 where 条件;
+update 表名 set class="" where name="";
+update 表名 set class="";
+#删除数据； delete from 表名 where 条件;
+delete from 表名 where name="";
+
+delete from 表名;

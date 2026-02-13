@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>二次测试数据点赞</title>
+  </head>
+  <body>
+    <button id="dzs" onclick="dianZan()">0</button>
+    <script>
+      function dianZan(uid, bv) {
+        let jiLu = database.get("点赞记录", uid, bv);
+        if (jiLu) {
+          let dianZanShu = database.jian("点赞数", bv, 1);
+          database.shanChu("点赞记录", uid, bv);
+          document.getElementById("dzs").innerText = dianZanShu;
+        } else {
+          let dianZanShu = database.jian("点赞数", bv, 1);
+          database.tianJian("点赞记录", uid, bv);
+          document.getElementById("dzs").innerText = dianZanShu;
+        }
+      }
+    </script>
+  </body>
+</html>
