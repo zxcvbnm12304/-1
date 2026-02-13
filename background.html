@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rustling</title>
+    <!-- <link rel="icon" type="image/svg+xml" href="img9.webp" /> -->
+    <link rel="stylesheet" href="background.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <div class="block">
+      <div class="nav-wrapper">
+        <div class="nav-logo">⭐Rustling</div>
+        <nav class="menu-section">
+          <ul class="menu-item">
+            <li>
+              <a href="background.html" class="active"
+                ><ion-icon name="person-outline"></ion-icon>我的</a
+              >
+            </li>
+            <li>
+              <a href="visitor.html"
+                ><ion-icon name="people-outline"></ion-icon>访客</a
+              >
+            </li>
+            <li>
+              <a href="background.html"
+                ><ion-icon name="eye-outline"></ion-icon>浏览</a
+              >
+            </li>
+            <li>
+              <a href="about.html"
+                ><ion-icon name="cog-outline"></ion-icon>设置</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="top">
+        <header class="header">
+          <h1 class="page-title">欢迎</h1>
+          <div class="header-actions">
+            <div class="user-image">
+              <a href="about.html"
+                ><img
+                  src="https://upload-bbs.miyoushe.com/upload/2024/02/14/191648666/c349b41ea045681e240dc64adbde040b_2558205065599629229.jpg?x-oss-process=image/resize,s_600/quality,q_80/auto-orient,0/interlace,1/format,jpg"
+                  class="user-image"
+              /></a>
+            </div>
+          </div>
+        </header>
+
+        <widget-layout data-id="anouncement" class="pb-4">
+          <div class="title">
+            <div class="widget-title">
+              <span>公告</span>
+              <div class="text-neutral">欢迎</div>
+              <div class="cnetes">
+                <ion-icon name="close-outline"></ion-icon>
+              </div>
+            </div>
+            <div class="widget-title">
+              <span>关于本后台</span>
+              <div class="text-neutral">Rustling专用于个人博客的管理后台</div>
+              <div class="cnetes">
+                <ion-icon name="close-outline"></ion-icon>
+              </div>
+            </div>
+            <div class="widget-title">
+              <span>联系</span>
+              <div class="text-neutral1">
+                <div class="lianxi">
+                  <a href="#"><ion-icon name="logo-github"></ion-icon></a>
+                  <a href="#"><ion-icon name="logo-wechat"></ion-icon></a>
+                </div>
+              </div>
+              <div class="cnetes">
+                <ion-icon name="close-outline"></ion-icon>
+              </div>
+            </div>
+            <div class="widget-title">
+              <span>前台</span>
+              <div class="text-neutral1">
+                <div class="lianxi">
+                  <a href="72.html"
+                    ><ion-icon name="albums-outline"></ion-icon
+                  ></a>
+                </div>
+              </div>
+              <div class="cnetes">
+                <ion-icon name="close-outline"></ion-icon>
+              </div>
+            </div>
+          </div>
+        </widget-layout>
+        <div id="con" class="con">
+          <div class="onload-animation">
+            <div class="transition-all" id="demo">
+              {{ message }}
+              <div class="text">{{text}}</div>
+            </div>
+          </div>
+          <div class="onload-animation">
+            <div class="transition-all" id="demo">
+              {{ message1 }}
+              <div class="text">{{text1}}</div>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+      </div>
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="background.js" type="module"></script>
+  </body>
+</html>

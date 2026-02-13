@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rustling</title>
+    <!-- <link rel="icon" type="image/svg+xml" href="img9.webp" /> -->
+    <link rel="stylesheet" href="background.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <div class="block">
+      <div class="nav-wrapper">
+        <div class="nav-logo">⭐Rustling</div>
+        <nav class="menu-section">
+          <ul class="menu-item">
+            <li>
+              <a href="background.html"
+                ><ion-icon name="person-outline"></ion-icon>我的</a
+              >
+            </li>
+            <li>
+              <a href="visitor.html" class="active"
+                ><ion-icon name="people-outline"></ion-icon>访客</a
+              >
+            </li>
+            <li>
+              <a href="background.html"
+                ><ion-icon name="eye-outline"></ion-icon>浏览</a
+              >
+            </li>
+            <li>
+              <a href="about.html"
+                ><ion-icon name="cog-outline"></ion-icon>设置</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="top">
+        <header class="header">
+          <h1 class="page-title">欢迎</h1>
+          <div class="header-actions">
+            <div class="user-image">
+              <a href="about.html"
+                ><img
+                  src="https://upload-bbs.miyoushe.com/upload/2024/02/14/191648666/c349b41ea045681e240dc64adbde040b_2558205065599629229.jpg?x-oss-process=image/resize,s_600/quality,q_80/auto-orient,0/interlace,1/format,jpg"
+                  class="user-image"
+              /></a>
+            </div>
+          </div>
+        </header>
+        <!--  -->
+        <div class="stats-cards">
+          <div class="card">
+            <h3>总文章数</h3>
+            <p class="value" id="total-articles">2</p>
+          </div>
+          <div class="card">
+            <h3>总阅读量</h3>
+            <p class="value" id="total-views">0</p>
+          </div>
+          <div class="card">
+            <h3>总评论数</h3>
+            <p class="value" id="total-comments">0</p>
+          </div>
+          <div class="card">
+            <h3>总访客数</h3>
+            <p class="value" id="total-visitors">0</p>
+          </div>
+        </div>
+        <!--  -->
+        <!-- 图表区域 -->
+    <div class="charts-container">
+      <!-- 访问量趋势图 -->
+      <div class="chart-item">
+        <h4>近7天访问量趋势</h4>
+        <div id="visit-trend-chart" class="chart"></div>
+      </div>
+        <!--  -->
+      </div>
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="background.js" type="module"></script>
+  </body>
+</html>
